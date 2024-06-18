@@ -1,0 +1,20 @@
+@import 'variables';
+@import 'mixins';
+@import 'header';
+@import 'banner';
+@import 'items';
+@import 'navbarMobile';
+
+// Variables
+$primary-color: #FF93F4;
+$secondary-color: #D4FF00;
+$font-family: 'Open Sans';
+
+// Estilos Generales
+body {
+  font-family: $font-family;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #1B1629;
+}

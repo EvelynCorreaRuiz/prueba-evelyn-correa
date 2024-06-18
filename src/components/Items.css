@@ -1,0 +1,54 @@
+.items-container {
+  position: relative;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  overflow: hidden; /* Evita que los círculos amplíen la página */
+}
+
+.items {
+  display: flex;
+  gap: 50px; /* Espacio entre las tarjetas */
+  width: 1040px; /* Ancho total del contenedor de las tarjetas */
+}
+
+.item {
+  flex: 1;
+}
+
+.items .card {
+  margin: 0;
+  border: none;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  height: 369px;
+  border-radius: 25px;
+}
+
+.items .icon {
+  padding-top: 15px;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.items .icon img { /* Cohete */
+  margin-top: 10px;
+  width: 76px;
+  height: 75px;
+  align-items: center;
+}
+
+.items .card-title { /* Título de las tarjetas */
+  font-size: 40px;
+  margin: 0.5px;
+  color: #FF93F4;
+  font-weight: 700;
+}
+
+.items .card-text { /* Párrafos de las tarjetas */
+  font-size: 16px;
+  color: #1B1629;
+  font-weight: 400;
+  text-align: center;
+  margin: 20px;
+}

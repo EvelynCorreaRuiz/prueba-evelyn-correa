@@ -1,0 +1,67 @@
+.banner {
+  position: relative;
+  background-size: cover;
+  height: 574px; /* Ajusta la altura según sea necesario */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(27, 22, 41, 0.65); /* Color con 65% de opacidad */
+  z-index: 1; /* La superposición tiene un z-index de 1 para estar debajo del contenido */
+}
+
+.banner .banner-content {
+  position: relative;
+  z-index: 2; /* El contenido del banner tiene un z-index de 2 para estar sobre la superposición */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner .pre-title {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.banner .main-title {
+  font-size: 5rem;
+  margin: 10px 0; /* Reducir el margen para acercar las líneas */
+  font-weight: bolder;
+  line-height: 1.1; /* Ajustar la altura de la línea para acercar las líneas */
+}
+
+.banner .cta-button {
+  width: 138px;
+  height: 50px;
+  background-color: #D4FF00;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #1B1629; /* Ajusta el color del texto según sea necesario */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px; /* Añadido para dar espacio desde el título */
+  z-index: 3; /* El botón tiene un z-index de 3 para asegurarse de que esté sobre otros elementos */
+  font-weight: 700;
+  border-radius: 25px; /* Añadido para hacer las puntas más redondeadas */
+  letter-spacing: 2px; /* Añadido para ajustar la separación entre letras */
+  transition: background-color 0.3s; /* Añadido para una transición suave */
+}
+
+.banner .cta-button:focus,
+.banner .cta-button:active {
+  background-color: #FF93F4;
+  outline: none; /* Elimina el borde de enfoque predeterminado */
+}
+ 
