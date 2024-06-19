@@ -14,7 +14,13 @@ const Header = () => {
             alt="Logo"
           />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle aria-controls="basic-navbar-nav">
+          <div className="navbar-toggler-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link 

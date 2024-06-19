@@ -33,7 +33,7 @@
 }
 
 .header .nav-link.active {
-  color: #ffffff; /* Mantiene el color original */
+  color: #ffffff;
 }
 
 .header .nav-link.active::after {
@@ -43,6 +43,78 @@
   height: 4px;
   background-color: #D4FF00;
   position: absolute;
-  bottom: 2px; /* Ajustar según sea necesario la barrita*/
+  bottom: 2px;
   left: 0;
+}
+
+@media (max-width: 768px) {
+  .header .navbar-brand img { /*Logo*/
+    width: 137px;
+    height: 37px;
+    margin-left: 15px;
+  }
+
+  .navbar-toggler {
+    border: none; /* Eliminar el borde del botón */
+    padding: 0 ;
+    background-color: transparent; /* Hacer el fondo transparente */
+    position: relative;
+  }
+
+  .navbar-toggler-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 24px;
+    height: 18.5px;
+    background-color: transparent;
+  }
+
+  .navbar-toggler-icon span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: #ffffff; /* Color blanco para las líneas */
+    transition: background-color 0.3s;
+  }
+
+  .navbar-toggler:focus .navbar-toggler-icon span,
+  .navbar-toggler:active .navbar-toggler-icon span,
+  .navbar-toggler:hover .navbar-toggler-icon span {
+    background-color: #D4FF00; /* Cambiar color al hacer clic */
+    
+  }
+
+  .navbar-collapse {
+    background-color: #FF93F4; /* Color de fondo del menú desplegable */
+    margin-top: 10px;
+    z-index: 3;
+  }
+
+  .navbar-collapse .nav-link {
+    color: #ffffff; /* Color de las opciones del menú */
+    margin: 0 10px;
+    text-align: left;
+    width: auto;
+    padding: 0;
+    margin: 5%;
+  
+  }
+
+  .navbar-collapse .nav-link.active::after {
+    top: 50%;
+    width: 15%;
+    height: 4px;
+    margin-left :35%;
+  
+  }
+
+  .navbar-collapse .nav-link:hover {
+    color: #D4FF00;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
 }

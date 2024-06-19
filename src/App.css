@@ -6,7 +6,7 @@
   width: 100%;
   min-height: 100vh; /* Asegura que el contenedor principal cubra al menos la altura de la ventana */
   position: relative;
-  background-color: #FFFFFF; /* Color de fondo total */
+  background-color: #FFFFFF; /* Color de fondo principal*/
   overflow: hidden; /* Evita que los círculos amplíen la página */
   margin: 0;
   padding: 0;
@@ -21,9 +21,9 @@
 .circle.bottom-left {
   width: 152px;
   height: 152px;
-  bottom: -76px; /* Ajusta la posición para que el círculo esté en la esquina inferior izquierda */
-  left: -76px;   /* Ajusta la posición para que el círculo esté en la esquina inferior izquierda */
-  transform: translateY(-10%); /* Ajusta la posición para centrar el círculo */
+  bottom: -76px; 
+  left: -76px;   
+  transform: translateY(-10%); 
 }
 
 .circle.bottom-right {
@@ -31,6 +31,22 @@
   width: 490px;
   height: 490px;
   top: 50%;
-  right: -245px; /* Ajusta la posición para que el círculo esté en el centro a la derecha */
+  right: -255px; /* Ajusta la posición para que el círculo esté en el centro a la derecha */
   transform: translateY(-30%);
+}
+
+@media (max-width: 768px) {
+  .circle.bottom-left {
+    width: 100px;
+    height: 100px;
+    bottom: -50px;
+    left: -50px;
+  }
+
+  .circle.bottom-right {
+    width: 490px;
+    height: 490px;
+    top:23%;
+    right: -400px;
+  }
 }

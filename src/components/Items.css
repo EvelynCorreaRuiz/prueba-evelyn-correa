@@ -17,10 +17,10 @@
   flex: 1;
 }
 
-.items .card {
+.items .card { /*tarjetas*/
   margin: 0;
   border: none;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
   width: 300px;
   height: 369px;
   border-radius: 25px;
@@ -53,4 +53,19 @@
   font-weight: 400;
   text-align: center;
   margin: 20px;
+}
+
+@media (max-width: 768px) {
+  .items {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .items .card {
+    margin: auto;
+    width: 80%;
+    margin-bottom: 20px;
+    align-items: center;
+  }
 }
