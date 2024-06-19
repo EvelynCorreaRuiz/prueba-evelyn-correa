@@ -1,15 +1,19 @@
 import React from 'react';
+import './App.css';
 import Header from './components/Header';
 import Banner from './components/Banner';
 import Items from './components/Items';
-import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Banner />
-      <Items />
+      <div className="main-container">
+        <div className="circle bottom-left"></div>
+        <div className="circle bottom-right"></div>
+        <Header />
+        <Banner />
+        <Items />
+      </div>
     </div>
   );
 }

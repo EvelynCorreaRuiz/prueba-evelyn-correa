@@ -1,11 +1,13 @@
 .banner {
   position: relative;
   background-size: cover;
+  width: 100%;
   height: 574px; /* Ajusta la altura según sea necesario */
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: #fff;
+  overflow: hidden; /* Evita que los círculos amplíen la página */
 }
 
 .banner::before {
@@ -35,7 +37,7 @@
 
 .banner .main-title {
   font-size: 5rem;
-  margin: 10px 0; /* Reducir el margen para acercar las líneas */
+  margin: 10px 0; /* Reduce el margen para acercar las líneas */
   font-weight: bolder;
   line-height: 1.1; /* Ajustar la altura de la línea para acercar las líneas */
 }
@@ -64,4 +66,3 @@
   background-color: #FF93F4;
   outline: none; /* Elimina el borde de enfoque predeterminado */
 }
- 

@@ -1,9 +1,10 @@
 .items-container {
   position: relative;
-  padding: 50px 0;
+  padding: 80px 0;
   display: flex;
   justify-content: center;
   overflow: hidden; /* Evita que los círculos amplíen la página */
+  margin: auto;
 }
 
 .items {
@@ -23,6 +24,7 @@
   width: 300px;
   height: 369px;
   border-radius: 25px;
+  z-index: 2;
 }
 
 .items .icon {
